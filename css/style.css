@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#grid_wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px 40px 500px minmax(100px, 1fr); 
+    grid-template-areas:
+    "hea hea"
+    "nav nav"
+    "se1 se1"
+    "foo foo";
+}
+
+header {
+    background-color: lightblue;
+    color: black;
+    grid-area: hea;
+    font-family: fantasy;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav {
+    
+    background-color: lightblue;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100vw;
+}
+
+#section_1 {
+    background-color:pink;
+    grid-area: se1;
+    flex-direction: column;
+}
+
+footer {
+    background-color: beige;
+    grid-area: foo;
+}
+
+#link_list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    list-style: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+#linklist {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 1000px;
+}
+
+
+
+
+

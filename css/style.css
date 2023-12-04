@@ -14,12 +14,12 @@
     grid-template-areas:
     "hea hea"
     "nav nav"
-    "se1 se1"
+    "se1 se2"
     "foo foo";
 }
 
 header {
-    background-color: lightblue;
+    background-color:  #d6f9e5;
     color: black;
     grid-area: hea;
     font-family: fantasy;
@@ -28,27 +28,40 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: solid #27ae60;
+
 
 }
 nav {
     
-    background-color: lightblue;
+    background-color: #d6f9e5;
     grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: solid #27ae60 ;
     
     width: 100vw;
 }
 
 #section_1 {
-    background-color:pink;
+    background-color: white ;
     grid-area: se1;
     flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+#section_2 {
+    grid-area: se2;
+    padding-left: 150px;
 }
 
 footer {
-    background-color: beige;
+    background-color:  #27ae60;
     grid-area: foo;
 }
 
@@ -85,6 +98,21 @@ a:active {
     align-items: center;
     width: 1000px;
 }
+
+
+#rubrik_se1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#Naturbild {
+    width: 650px;
+    height: auto;
+
+}
+
 
 
 

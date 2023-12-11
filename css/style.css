@@ -4,44 +4,55 @@
     box-sizing: border-box;
 }
 
-
-
-#grid_wrapper {
+#grid_wrapper_index {
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 100px 40px 500px minmax(100px, 1fr); 
+    grid-template-rows: 1fr 5fr 1fr; 
     grid-template-areas:
-    "hea hea"
-    "nav nav"
     "se1 se2"
-    "foo foo";
+    "se1 se2"
+    "foo foo"
+    ; 
 }
 
-header {
+#grid_wrapper_miljo {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr ;
+    grid-template-rows:  500px minmax(100px, 1fr); 
+    grid-template-areas:
+    "se3"
+    "se4";
+}
+
+#huvudrubrik {
     background-color:  #d6f9e5;
     color: black;
     grid-area: hea;
     font-family: fantasy;
     font-size: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     border-bottom: solid #27ae60;
-
-
 }
-nav {
-    
+
+#footer {
+    background-color:  #d6f9e5;
+    grid-area: foo;
+    border-top: solid #27ae60;
+    height: 100px;
+}
+#nav_alla_tre {  
     background-color: #d6f9e5;
     grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: solid #27ae60 ;
-    
-    width: 100vw;
+    height: 50px;
 }
 
 #section_1 {
@@ -60,10 +71,16 @@ nav {
     padding-left: 150px;
 }
 
-footer {
-    background-color:  #27ae60;
-    grid-area: foo;
+#section_3 {
+    grid-area: se3;
+    background-color: blue;
 }
+
+#section_4 {
+    grid-area: se4;
+    background-color: purple;
+}
+
 
 #link_list {
     display: flex;
@@ -105,13 +122,20 @@ a:active {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    
+}
+
+#rubrik_se1:hover {
+    color: red;
 }
 
 #Naturbild {
     width: 650px;
     height: auto;
+    margin: 30px ;
 
 }
+
 
 
 

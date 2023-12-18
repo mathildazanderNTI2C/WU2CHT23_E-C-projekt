@@ -6,25 +6,38 @@
 
 #grid_wrapper_index {
     display: grid;
-    height: 100vh;
+    height: 90vh;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr 5fr 1fr; 
     grid-template-areas:
     "se1 se2"
     "se1 se2"
-    "foo foo"
-    ; 
+    "foo foo"; 
+    background-color: #1b6d46 ;
 }
 
 #grid_wrapper_miljo {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 2fr ;
-    grid-template-rows:  500px minmax(100px, 1fr); 
+    height: 120vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 2fr 2fr 2fr; 
     grid-template-areas:
-    "se3"
-    "se4";
+    "se3 se3 se3"
+    "se4 se4 se16"
+    "se5 se5 se17"
+    "se6 se6 se18";
 }
+
+#grid_wrapper_produkter {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "se7 se8 se9 se10"
+    "se11 se12 se13 se14" ;
+}
+
 
 #huvudrubrik {
     background-color:  #d6f9e5;
@@ -46,13 +59,21 @@
     height: 100px;
 }
 #nav_alla_tre {  
-    background-color: #d6f9e5;
+    background-color: #27ae60;
     grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid #27ae60 ;
+    border-bottom: solid white ;
     height: 50px;
+}
+
+.navtext1:hover {
+    font-weight: bold;
+}
+
+.navtext2:hover {
+    font-weight: bold;
 }
 
 #section_1 {
@@ -65,7 +86,15 @@
     margin-right: 50px;
     margin-bottom: 30px;
     padding-top: 10px;
+    border: solid black 4px;
+    border-radius: 20px;
 }
+
+#section_1:hover {
+    transition: 0.5s;
+    box-shadow: 5px 3px 3px 5px black;
+}
+
 #section_2 {
     grid-area: se2;
     padding-left: 150px;
@@ -73,12 +102,110 @@
 
 #section_3 {
     grid-area: se3;
-    background-color: blue;
+    background-color: #218c54;
 }
 
 #section_4 {
     grid-area: se4;
-    background-color: purple;
+    background-color: white;
+    text-decoration:wavy;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: solid #1b6d46 ;
+    border-left: solid #1b6d46  ;
+    border-right: solid #1b6d46  ;
+}
+
+#section_5 {
+    grid-area:se5;
+    background-color:white;
+    border-bottom: solid #1b6d46 ;
+    border-left: solid #1b6d46  ;
+    border-right: solid #1b6d46  ;
+
+
+}
+
+#section_6 {
+    grid-area:se6;
+    background-color: white;
+    border-left: solid #1b6d46 ;
+    border-bottom: solid #1b6d46  ;
+    border-right: solid #1b6d46 ;
+
+}
+
+#section_7 {
+    grid-area:se7;
+    background-color: white;
+}
+
+#section_8 {
+    grid-area:se8;
+    background-color: white;
+}
+
+#section_9 {
+    grid-area:se9;
+    background-color: white;
+}
+
+#section_10 {
+    grid-area:se10;
+    background-color: white;
+}
+
+#section_11 {
+    grid-area:se11;
+    background-color: white ;
+    border-style: double;
+}
+
+#section_12 {
+    grid-area:se12;
+    background-color: white;
+    border-style: double;
+}
+
+#section_13 {
+    grid-area:se13;
+    background-color: white;
+    border-style: double;
+}
+
+#section_14 {
+    grid-area:se14;
+    background-color: white;
+    border-style: double;
+}
+
+#section_15 {
+    grid-area:se15;
+    background-color: white;
+}
+
+#section_16 {
+    grid-area:se16;
+    background-color: #1b6d46 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_17 {
+    grid-area:se17;
+    background-color: #1b6d46 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_18 {
+    grid-area:se18;
+    background-color: #1b6d46 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -125,10 +252,6 @@ a:active {
     
 }
 
-#rubrik_se1:hover {
-    color: red;
-}
-
 #Naturbild {
     width: 650px;
     height: auto;
@@ -136,9 +259,72 @@ a:active {
 
 }
 
+#kottbit {
+    width: 358px;
+    height: auto;
+    margin: 20px;
+    border:solid black 4px;
+}
+
+#solceller {
+    width: 380px;
+    height: 400px;
+    margin: 10px;
+    border: solid black 4px;
+}
+
+#vindkraftverk {
+
+    width: 380px;
+    height: 400px;
+    margin: 10px;
+    border: solid black 4px;
+}
+
+#fro {
+    width: 380px;
+    height: 400px;
+    margin: 10px;
+    border: solid black 4px;
+}
+
+#elbil {
+    width: 358px;
+    height: 400px;
+    margin: 10px;
+    border: solid black 4px;
+}
+
+#flygplan {
+    width: 360px;
+    height: auto;
+    margin: 20px;
+    border:solid black 4px;
+}
+
+#shopping {
+    width: 280px;
+    height: auto;
+    margin:20px;
+    border:solid black 4px;
+}
+
+p {
+    margin: 10px;
+}
 
 
+#rubrik_miljovanliga_val {
+    color: black;
+    font-family: fantasy;
+    font-size: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 30px;
+}
 
 
+/*#27ae60, #218c54, och #1b6d46 */ 
 
 

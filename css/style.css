@@ -13,12 +13,12 @@
     "se1 se2"
     "se1 se2"
     "foo foo"; 
-    background-color: #1b6d46 ;
+    background-color: #27ae60 ;
 }
 
 #grid_wrapper_miljo {
     display: grid;
-    height: 120vh;
+    height: 130vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 2fr 2fr 2fr; 
     grid-template-areas:
@@ -30,18 +30,21 @@
 
 #grid_wrapper_produkter {
     display: grid;
-    height: 80vh;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas:
     "se7 se8 se9 se10"
     "se11 se12 se13 se14" ;
+    background-color: #27ae60;
+
 }
 
 
 #huvudrubrik {
-    background-color:  #d6f9e5;
-    color: black;
+    color: pink;
+    background-color: #27ae60;
+    text-decoration: white;
     grid-area: hea;
     font-family: fantasy;
     font-size: 20px;
@@ -49,22 +52,26 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    border-bottom: solid #27ae60;
+    border-bottom: solid #1b6d46;
 }
 
+h1 {
+    color: white;
+
+}
 #footer {
-    background-color:  #d6f9e5;
+    background-color:  white;
     grid-area: foo;
-    border-top: solid #27ae60;
+    border-top: solid #1b6d46;
     height: 100px;
 }
 #nav_alla_tre {  
-    background-color: #27ae60;
+    background-color: white;
     grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid white ;
+    border-bottom: solid #1b6d46 ;
     height: 50px;
 }
 
@@ -97,12 +104,17 @@
 
 #section_2 {
     grid-area: se2;
-    padding-left: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #section_3 {
     grid-area: se3;
     background-color: #218c54;
+    border-bottom: solid #27ae60 ;
 }
 
 #section_4 {
@@ -110,7 +122,7 @@
     background-color: white;
     text-decoration:wavy;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px;  */
     border-bottom: solid #1b6d46 ;
     border-left: solid #1b6d46  ;
     border-right: solid #1b6d46  ;
@@ -137,45 +149,37 @@
 
 #section_7 {
     grid-area:se7;
-    background-color: white;
 }
 
 #section_8 {
     grid-area:se8;
-    background-color: white;
 }
 
 #section_9 {
     grid-area:se9;
-    background-color: white;
 }
 
 #section_10 {
     grid-area:se10;
-    background-color: white;
 }
 
 #section_11 {
     grid-area:se11;
-    background-color: white ;
     border-style: double;
 }
 
 #section_12 {
     grid-area:se12;
-    background-color: white;
     border-style: double;
 }
 
 #section_13 {
     grid-area:se13;
-    background-color: white;
     border-style: double;
 }
 
 #section_14 {
     grid-area:se14;
-    background-color: white;
     border-style: double;
 }
 
@@ -253,9 +257,9 @@ a:active {
 }
 
 #Naturbild {
-    width: 650px;
+    width: 550px;
     height: auto;
-    margin: 30px ;
+
 
 }
 
